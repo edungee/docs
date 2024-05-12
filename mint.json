@@ -37,18 +37,41 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
       "group": "Project",
       "pages": [
+        "project-overview",
         "create-project",
         "rename-project",
         "delete-project"
       ]
     },
+
+    {
+      "group": "Workflow",
+      "pages": [
+        "workflow-overview",
+        "create-workflow",
+        "workflow-components",
+        "rename-workflow",
+        "activate-workflow",
+        "run-history"
+      ]
+    },
+
+    {
+      "group": "Secret",
+      "pages": [
+        "overview",
+        "create-secret",
+        "edit-secret",
+        "delete-secret"
+      ]
+    },
+
     {
       "group": "API Documentation",
       "pages": [
@@ -66,7 +89,6 @@
   ],
   "footerSocials": {
     "x": "https://x.com/datangle_io",
-    "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/datangle-io"
   }
 }
