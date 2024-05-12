@@ -65,7 +65,7 @@
     {
       "group": "Secret",
       "pages": [
-        "overview",
+        "secret-overview",
         "create-secret",
         "edit-secret",
         "delete-secret"
