@@ -3,39 +3,39 @@ title: 'Quickstart'
 description: 'Start automating data operations in under 5 minutes'
 ---
 
-## Onboarding
+## Getting started with Datangle
 
-To get started with Datangle, go to the [sign up](https://app.datangle.io/signup) page. Sign up with your email address.
+To get started with Datangle, go to the [sign up](https://app.datangle.io/signup) page. Sign up with your email address, then follow the steps to start automating data operations.
 
-### Create your first project
+### 1. Create your first project
 
 <AccordionGroup>
   <Accordion icon="folder" title="Choose a project name">
-    As part of the onboarding process, you are presented with a textbox to provide a project name. The project name must have atleast three chracters.
+    As part of the onboarding process, you are presented with a textbox to provide a project name. The project name must be unique with atleast three characters. 
   </Accordion>
 </AccordionGroup>
 
-### Connect your data warehouse
+### 2. Connect your data warehouse
 
 <AccordionGroup>
 
-<Accordion icon="message-bot" title="Authentication">
+<Accordion icon="message-bot" title="Authenticate with data warehouse credentials">
   To connect to your data warehouse, you need to select your preferred provider and provide the information related to it. Datangle currently supports Databricks and Snowflake.
   <Tabs>
   <Tab title="Databricks">
-    | Field | Description                           |
-| -------- | ------------------------------------- |
-| Username     | This is the email address or username associated with your Databricks account. |
-| Password      | This password is associated with the username specified above and used in logging into your Databricks account. |
-| Workspace URL   | Your Databricks workspace URL. Read the Databricks [documentation](https://docs.databricks.com/en/workspace/workspace-details.html) to learn how to determine your instance name. |
+    | Field           | Description                           |
+    | --------------- | ------------------------------------- |
+    | Username        | This is the email address or username associated with your Databricks account. |
+    | Password        | This password is associated with the username specified above and used in logging into your Databricks account. |
+    | Workspace URL   | Your Databricks workspace URL. Read the Databricks [documentation](https://docs.databricks.com/en/workspace/workspace-details.html) to learn how to determine your instance name. |
 
   </Tab>
   <Tab title="Snowflake">
-    | Field | Description                           |
-| -------- | ------------------------------------- |
-| Account     | Enter your Snowflake account name and region (part of the URL you use to log in to Snowflake). Uses the format [accountName].[region_id]. |
-| Username      | This is the email address or username associated with your Snowflake account. |
-| Password   | This password is associated with the username specified above and used in logging into your databricks account. We currently support full Saas deployment model. |
+    | Field      | Description                           |
+    | ---------- | ------------------------------------- |
+    | Account    | Enter your Snowflake account name and region (part of the URL you use to log in to Snowflake). Uses the format [accountName].[region_id]. |
+    | Username   | This is the email address or username associated with your Snowflake account. |
+    | Password   | This password is associated with the username specified above and used in logging into your databricks account. We currently support full Saas deployment model. |
   </Tab>
   <Tab title="Amazon Redshift">
     coming soon!
@@ -47,47 +47,42 @@ To get started with Datangle, go to the [sign up](https://app.datangle.io/signup
 
 </Accordion>
 <Accordion icon="rocket" title="Choose warehouse defaults">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
+  Once the authentication process to your preferred data warehouse is completed, you are prompted to select warehouse defaults to act as your first environment and linked to the project. Select the defaults based on your preferred provider as listed below:
+
+  <Tabs>
+  <Tab title="Databricks">
+    | Field    | Description                           |
+    | -------- | ------------------------------------- |
+    | Cluster  | Choose the Databricks cluster that Datangle will connect to. |
+    | Catalog  | Choose a Databricks Unity Catalog to connect to. |
+    | Schema   | Choose a Delta Lake schema to connect to. |
+
+  </Tab>
+  <Tab title="Snowflake">
+    | Field       | Description                           |
+    | ----------- | ------------------------------------- |
+    | Role        | The default Snowflake role for this environment connection.|
+    | Warehouse   | The default Snowflake warehouse for this environment connection.. |
+    | Database    | The default Snowflake database for this environment connection. |
+    | Schema      | The default Snowflake schema for this environment connection. |
+  </Tab>
+  <Tab title="Amazon Redshift">
+    coming soon!
+  </Tab>
+  <Tab title="Google Big Query">
+    coming soon!
+  </Tab>
+</Tabs>
+  
 </Accordion>
 
 </AccordionGroup>
 
-## Update your docs
+### 3. Create your first workflow
 
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+<AccordionGroup>
+  <Accordion icon="bolt-lightning" title="Workflow canvas">
+    By completing the data warehouse step, you're automatically redirected to a blank canvas to create your first workflow. Workflows consist of triggers and actions, enabling you to seamlessly automate data operations and build CI/CD processes.
+  </Accordion>
+</AccordionGroup>
 
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
-</CardGroup>
