@@ -15,6 +15,10 @@
       "to": "#605EED"
     }
   },
+  "modeToggle": {
+    "default": "light",
+    "isHidden": false
+  },
   "topbarLinks": [
     {
       "name": "Support",
@@ -36,39 +40,39 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart"
+        "get-started/introduction",
+        "get-started/quickstart"
       ]
     },
     {
       "group": "Project",
       "pages": [
-        "project-overview",
-        "create-project",
-        "rename-project",
-        "delete-project"
+        "project/overview",
+        "project/create",
+        "project/edit",
+        "project/access"
       ]
     },
 
     {
       "group": "Workflow",
       "pages": [
-        "workflow-overview",
-        "create-workflow",
-        "workflow-components",
-        "rename-workflow",
-        "activate-workflow",
-        "run-history"
+        "workflow/overview",
+        "workflow/create",
+        "workflow/components",
+        "workflow/rename",
+        "workflow/activate-deactivate",
+        "workflow/run-history"
       ]
     },
 
     {
       "group": "Secret",
       "pages": [
-        "secret-overview",
-        "create-secret",
-        "edit-secret",
-        "delete-secret"
+        "secret/overview",
+        "secret/create",
+        "secret/edit",
+        "secret/delete"
       ]
     },
 
